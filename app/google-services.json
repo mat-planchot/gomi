@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "505126302974",
+    "firebase_url": "https://gomi-64691.firebaseio.com",
+    "project_id": "gomi-64691",
+    "storage_bucket": "gomi-64691.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:505126302974:android:84041b40442d33e11521af",
+        "android_client_info": {
+          "package_name": "fr.epsi.gomi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "505126302974-omq01q674gijt703edgta0v0m2ovp74q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTUW5gB2V0OyWMcg89nkPjlZ9sJHltciE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "505126302974-omq01q674gijt703edgta0v0m2ovp74q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
