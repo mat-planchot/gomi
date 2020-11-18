@@ -46,9 +46,11 @@
     <string name="instant_validation">(instant validation)</string>
     <string name="firebase_status_fmt">Firebase User: %s</string>
 
+    <string name="slogan">Gomi, le choix éco-responsable.</string>
 
     <string name="edit">éditer</string>
     <string name="quit">Sortir</string>
     <string name="add">ajouter</string>
+    <string name="continued">Continuez</string>
 
 </resources>
