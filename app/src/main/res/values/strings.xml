@@ -46,14 +46,20 @@
     <string name="instant_validation">(instant validation)</string>
     <string name="firebase_status_fmt">Firebase User: %s</string>
 
+    <string name="photo_homepage">Gomi</string>
     <string name="slogan">Gomi, le choix éco-responsable.</string>
     <string name="new_scan">Scanner votre produit en cliquant sur le bouton.</string>
+
+    <string name="menu">Menu</string>
+    <string name="photo_trash">Poubelle</string>
+    <string name="img_scan">Scan</string>
 
     <string name="edit">éditer</string>
     <string name="quit">Sortir</string>
     <string name="add">ajouter</string>
     <string name="continued">Continuez</string>
-    <string name="photo_homepage">Gomi</string>
+
+
 
 
 </resources>
