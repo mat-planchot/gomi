@@ -11,7 +11,7 @@
             android:layout_gravity="start"
             android:padding="10dp" />
         <EditText
-            android:id="@+id/door_name_txt"
+            android:id="@+id/search_gomi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -23,5 +23,25 @@
             android:src="@drawable/loupe"
             android:layout_gravity="end"
             android:padding="10dp" />
+        <ImageView
+            android:id="@+id/trash"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:src="@drawable/trash"
+            android:layout_gravity="end"
+            android:padding="10dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/new_scan" />
+        <ImageView
+            android:id="@+id/code_barre"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:src="@drawable/code_barre"
+            android:layout_gravity="center"
+            android:padding="10dp" />
+
 
 </LinearLayout>
