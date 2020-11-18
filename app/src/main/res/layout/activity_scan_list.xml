@@ -14,7 +14,7 @@
                     android:layout_width="40dp"
                     android:layout_height="fill_parent"
                     android:src="@drawable/menu"
-                    android:layout_gravity="start"
+                    android:layout_gravity="end"
                     android:padding="10dp" />
                 <SearchView
                     android:id="@+id/search_gomi"
@@ -43,17 +43,14 @@
             android:textSize="24sp"
             android:gravity="center"
             android:text="@string/new_scan" />
-
-        <ImageView
-            android:id="@+id/code_barre"
-            android:contentDescription="@string/img_scan"
-            android:layout_width="90dp"
-            android:layout_height="90dp"
+        <Button
+            android:id="@+id/barcodeBtn"
+            android:layout_width="80sp"
+            android:layout_height="80sp"
             android:layout_below="@id/text_scan"
-            android:layout_centerHorizontal="true"
-            android:src="@drawable/code_barre"
-            android:layout_gravity="center"
-            android:padding="10dp" />
+            android:background="@drawable/btn_barcode"
+            style="@style/CustomGreenCenterButton"
+            android:onClick="scanClick"/>
 
 
 </RelativeLayout>
