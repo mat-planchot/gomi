@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+
+    <LinearLayout
+        android:id="@+id/contentMenu"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/menu_icon"
+            android:contentDescription="@string/menu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/close"
+            android:layout_gravity="start"
+            android:padding="10dp" />
+        <TextView
+            android:id="@+id/titleSettings"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:paddingVertical="8dp"
+            android:text="@string/title_page_settings"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/photoSettings"
+        android:contentDescription="@string/photo_settings"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/contentMenu"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/photo_setting"
+        android:layout_gravity="end" />
+
+    <Button
+        android:id="@+id/btnAccount"
+        android:contentDescription="@string/account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/photoSettings"
+        android:fontFamily="@font/poppins"
+        android:text="@string/account"
+        android:textColor="@color/colorAccent"
+        android:background="@color/colorGreenSettings"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:paddingRight="150dp"
+        android:paddingLeft="25dp"
+        android:paddingVertical="15dp"
+        tools:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnNotification"
+        android:contentDescription="@string/notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAccount"
+        android:fontFamily="@font/poppins"
+        android:text="@string/notification"
+        android:textColor="@color/colorAccent"
+        android:background="@color/colorGreenSettings"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:paddingRight="150dp"
+        android:paddingLeft="25dp"
+        android:paddingVertical="15dp"
+        tools:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnFormationPage"
+        android:contentDescription="@string/disconnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnNotification"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins"
+        android:text="@string/disconnect"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/btn_disconnect"
+        android:paddingHorizontal="125dp"
+        android:paddingVertical="15dp"
+        tools:textSize="14sp" />
+
+</RelativeLayout>

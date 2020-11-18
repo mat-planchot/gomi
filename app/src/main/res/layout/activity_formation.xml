@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormationActivity">
+
+    <LinearLayout
+        android:id="@+id/contentMenu"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/menu_icon"
+            android:contentDescription="@string/menu"
+            android:layout_width="40dp"
+            android:layout_height="fill_parent"
+            android:src="@drawable/menu"
+            android:layout_gravity="start"
+            android:padding="10dp" />
+        <SearchView
+            android:id="@+id/search_gomi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title_formation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_page_formation"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/contentMenu"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="36sp"
+        />
+
+    <ImageView
+        android:id="@+id/meeting"
+        android:contentDescription="@string/photo_formation"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/title_formation"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/photo_formation"
+        android:layout_gravity="end" />
+
+    <TextView
+        android:id="@+id/textFormation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_formation"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/meeting"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins"
+        android:textSize="18sp"/>
+
+
+
+    <Button
+        android:id="@+id/btnFormationPage"
+        android:contentDescription="@string/continued"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textFormation"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins"
+        android:text="@string/begin"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/rounded_corners"
+        android:paddingHorizontal="125dp"
+        android:paddingVertical="15dp"
+        tools:textSize="14sp" />
+
+
+
+  </RelativeLayout>

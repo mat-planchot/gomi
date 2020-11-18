@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LocalisationActivity">
+
+    <LinearLayout
+        android:id="@+id/contentMenu"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/menu_icon"
+            android:contentDescription="@string/menu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/menu"
+            android:layout_gravity="start"
+            android:padding="10dp" />
+        <TextView
+            android:id="@+id/titleLocalisation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:paddingVertical="8dp"
+            android:text="@string/title_page_localisation"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/rocket"
+        android:contentDescription="@string/photo_localisation"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/contentMenu"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/photo_localisation"
+        android:layout_gravity="end" />
+
+    <LinearLayout
+        android:id="@+id/contentLegend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rocket">
+        <LinearLayout
+            android:id="@+id/blockGlassTrash"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/legendGlassTrash"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/legend_glass"
+                android:textSize="18sp"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="@font/poppins" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/blockHouseholdTrash"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/legendHouseholdTrash"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/legend_household"
+                android:textSize="18sp"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="@font/poppins" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/blockRecycleTrash"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/legendRecycleTrash"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/legend_recycle"
+                android:textSize="18sp"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="@font/poppins" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/code_barre"
+        android:contentDescription="@string/img_scan"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_below="@id/contentLegend"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/code_barre"
+        android:layout_gravity="center"
+        android:padding="10dp" />
+
+</RelativeLayout>
