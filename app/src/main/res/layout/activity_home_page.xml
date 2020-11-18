@@ -22,7 +22,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/logoHomePage"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
         android:fontFamily="@font/poppins_bold"
         android:text="@string/slogan"
         android:textColor="#000"
@@ -35,15 +34,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/slogan"
+        android:layout_marginTop="200dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:backgroundTint="@color/colorGreen"
         android:fontFamily="@font/poppins"
         android:text="@string/continued"
         android:textColor="@color/colorWhite"
-        android:onClick="continueClick"
+        android:background="@drawable/rounded_corners"
         android:paddingHorizontal="125dp"
-        android:paddingVertical="20dp"
+        android:paddingVertical="15dp"
         tools:textSize="14sp" />
 
-</>
+</RelativeLayout>
