@@ -42,6 +42,7 @@
         android:background="@drawable/rounded_corners"
         android:paddingHorizontal="125dp"
         android:paddingVertical="15dp"
+        android:onClick="continueClick"
         tools:textSize="14sp" />
 
 </RelativeLayout>
