@@ -216,7 +216,7 @@ public class ConnexionActivity extends BaseActivity implements View.OnClickListe
             btn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    startActivity(new Intent(ConnexionActivity.this, MainActivity.class));
+                    startActivity(new Intent(ConnexionActivity.this, ScanListActivity.class));
                 }
             });
         } else {

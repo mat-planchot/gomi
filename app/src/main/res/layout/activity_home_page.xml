@@ -46,4 +46,4 @@
         android:paddingVertical="20dp"
         tools:textSize="14sp" />
 
-</>
+</RelativeLayout>
