@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     style="@style/CustomLinearLayout">
+
+
+        <ImageView
+            android:id="@+id/menu_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:src="@drawable/menu"
+            android:layout_gravity="start"
+            android:padding="10dp" />
+        <EditText
+            android:id="@+id/door_name_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="28sp"/>
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:src="@drawable/loupe"
+            android:layout_gravity="end"
+            android:padding="10dp" />
+
+</LinearLayout>
