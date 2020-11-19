@@ -11,11 +11,14 @@ import android.widget.TextView;
 import fr.epsi.gomi.R;
 
 public class MonAdaptateurDeListe extends ArrayAdapter<String> {
-
-    private Integer[] tab_images_pour_la_liste = {
-            R.drawable.tri_verre,
-    R.drawable.tri_organique,
-    R.drawable.tri_textile};
+    // "verre", "papier / carton", "organique", "textile", "non recyclable"
+    private final Integer[] tab_images_pour_la_liste = {
+        R.drawable.tri_verre,
+        R.drawable.tri_papier_cartons,
+        R.drawable.tri_organique,
+        R.drawable.tri_textile,
+        R.drawable.non_recyclable
+    };
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
@@ -37,7 +40,7 @@ public class MonAdaptateurDeListe extends ArrayAdapter<String> {
         return rowView;
     }
 
-    public MonAdaptateurDeListe(Context context, String[] values) {
+    public MonAdaptateurDeListe(Context context, int rowlayout, String[] values) {
         super(context, R.layout.rowlayout, values);
     }
 }

@@ -12,10 +12,9 @@ public class WasteSorting extends ListActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_waste_sorting);
-        String[] values = new String[] { "verre", "textile", "papier / carton"  };
+        String[] values = new String[] { "verre", "papier / carton", "organique", "textile", "non recyclable"  };
 
-        ArrayAdapter<String> adapter = new MonAdaptateurDeListe(this,
-                android.R.layout.rowlayout, values);
+        ArrayAdapter<String> adapter = new MonAdaptateurDeListe(this, R.layout.rowlayout, values);
         setListAdapter(adapter);
     }
 }
