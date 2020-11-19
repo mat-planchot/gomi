@@ -101,7 +101,7 @@
         android:layout_below="@id/contentLegend"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp"
-        android:src="@drawable/code_barre"
+        android:src="@drawable/barcode"
         android:layout_gravity="center"
         android:padding="10dp" />
 
