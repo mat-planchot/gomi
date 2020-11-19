@@ -8,7 +8,7 @@
         android:contentDescription="row"
         android:id="@+id/icon"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="120dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="10dp">
@@ -22,6 +22,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:layout_marginLeft="10dp"
+        android:gravity="center"
         android:text="text"
         android:textSize="20sp" >
     </TextView>

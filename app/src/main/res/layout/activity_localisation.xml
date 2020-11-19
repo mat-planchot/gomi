@@ -6,37 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".LocalisationActivity">
 
-    <LinearLayout
-        android:id="@+id/contentMenu"
-        android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-        <ImageView
-            android:id="@+id/menu_icon"
-            android:contentDescription="@string/menu"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/menu"
-            android:layout_gravity="start"
-            android:padding="10dp" />
-        <TextView
-            android:id="@+id/titleLocalisation"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:textAlignment="center"
-            android:paddingVertical="8dp"
-            android:text="@string/title_page_localisation"
-            android:textSize="18sp"
-            android:fontFamily="@font/poppins" />
-    </LinearLayout>
-
     <ImageView
         android:id="@+id/rocket"
         android:contentDescription="@string/photo_localisation"
         android:layout_width="300dp"
         android:layout_height="200dp"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/contentMenu"
         android:layout_marginTop="25dp"
         android:src="@drawable/photo_localisation"
         android:layout_gravity="end" />
@@ -94,15 +69,23 @@
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/code_barre"
+        android:id="@+id/localisation_img"
         android:contentDescription="@string/img_scan"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
         android:layout_below="@id/contentLegend"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp"
-        android:src="@drawable/barcode"
+        android:src="@drawable/localisation"
         android:layout_gravity="center"
         android:padding="10dp" />
+    <Button
+        android:id="@+id/localisation_icon"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_below="@id/localisation_img"
+        android:background="@drawable/localisation_icon"
+        style="@style/CustomGreenCenterButton"
+        android:onClick="gpsClick"/>
 
 </RelativeLayout>

@@ -16,7 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".ParameterActivity"></activity>
-        <activity android:name=".WasteSorting" />
+        <activity android:name=".WasteSortingActivity" />
         <activity android:name=".FormationActivity" />
         <activity android:name=".LocalisationActivity" />
         <activity android:name=".SettingsActivity" />

@@ -55,7 +55,8 @@
         android:background="@drawable/rounded_corners"
         android:paddingHorizontal="125dp"
         android:paddingVertical="15dp"
-        tools:textSize="14sp" />
+        tools:textSize="14sp"
+        android:onClick="begin"/>
 
 
 
