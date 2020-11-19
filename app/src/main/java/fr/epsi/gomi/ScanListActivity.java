@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.SearchView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -18,6 +19,7 @@ import com.google.zxing.integration.android.IntentResult;
 
 public class ScanListActivity extends AppCompatActivity {
     Button barcodeBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,8 +61,7 @@ public class ScanListActivity extends AppCompatActivity {
                 });
                 AlertDialog dialog = builder.create();
                 dialog.show();
-            }
-            else {
+            } else {
                 Toast.makeText(this, "aucun réssultat", Toast.LENGTH_LONG).show();
             }
         } else {
@@ -88,5 +89,29 @@ public class ScanListActivity extends AppCompatActivity {
         });
  */
         return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        Intent intent = new Intent();
+        switch (item.getItemId()) {
+            case R.id.accueil:
+                Toast.makeText(this, "Vous êtes sur l'accueil", Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.formation:
+                intent = new Intent(this, FormationActivity.class);
+                startActivity(intent);
+                return true;
+            case R.id.localisation:
+                intent = new Intent(this, LocalisationActivity.class);
+                startActivity(intent);
+                return true;
+            case R.id.parameter:
+                intent = new Intent(this, SettingsActivity.class);
+                startActivity(intent);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }

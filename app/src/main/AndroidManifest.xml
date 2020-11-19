@@ -15,9 +15,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".WasteSorting"/>
+        <activity android:name=".ParameterActivity"></activity>
+        <activity android:name=".WasteSorting" />
+        <activity android:name=".FormationActivity" />
+        <activity android:name=".LocalisationActivity" />
+        <activity android:name=".SettingsActivity" />
         <activity android:name=".ScanListActivity" />
-        <activity android:name=".HomePageActivity"
+        <activity
+            android:name=".HomePageActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,14 +30,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".MainActivity" />
         <activity
             android:name=".GoogleSignInActivity"
-            android:label="@string/label_google_sign_in"/>
+            android:label="@string/label_google_sign_in" />
         <activity
             android:name=".ConnexionActivity"
             android:label="@string/label_emailpassword"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
         <activity
             android:name=".CaptureAct"
             android:screenOrientation="fullSensor"

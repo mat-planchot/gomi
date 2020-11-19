@@ -3,32 +3,11 @@
      style="@style/CustomLinearLayout">
 
 
-        <LinearLayout
-                android:id="@+id/content_menu"
-                android:orientation="horizontal"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content">
-                <ImageView
-                    android:id="@+id/menu_icon"
-                    android:contentDescription="@string/menu"
-                    android:layout_width="40dp"
-                    android:layout_height="fill_parent"
-                    android:src="@drawable/menu"
-                    android:layout_gravity="end"
-                    android:padding="10dp" />
-                <SearchView
-                    android:id="@+id/search_gomi"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"/>
-        </LinearLayout>
-
         <ImageView
             android:id="@+id/trash"
             android:contentDescription="@string/photo_trash"
-            android:layout_width="400dp"
+            android:layout_width="match_parent"
             android:layout_height="400dp"
-            android:layout_below="@id/content_menu"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="50dp"
             android:src="@drawable/trash"
