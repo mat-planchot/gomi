@@ -6,33 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".FormationActivity">
 
-    <LinearLayout
-        android:id="@+id/contentMenu"
-        android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-        <ImageView
-            android:id="@+id/menu_icon"
-            android:contentDescription="@string/menu"
-            android:layout_width="40dp"
-            android:layout_height="fill_parent"
-            android:src="@drawable/menu"
-            android:layout_gravity="start"
-            android:padding="10dp" />
-        <SearchView
-            android:id="@+id/search_gomi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"/>
-    </LinearLayout>
-
     <TextView
         android:id="@+id/title_formation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/title_page_formation"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/contentMenu"
         android:layout_marginTop="25dp"
         android:fontFamily="@font/poppins_bold"
         android:textSize="36sp"

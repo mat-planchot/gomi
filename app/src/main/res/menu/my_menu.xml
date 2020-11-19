@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search_icon"
+        android:title="Recherche"
+        android:icon="@drawable/ic_baseline_search_24"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="android.widget.SearchView" />
+
+    <item
+        android:id="@+id/accueil"
+        android:title="Accueil"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/formation"
+        android:title="Formation"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/localisation"
+        android:title="Localisation poubelle"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/parameter"
+        android:title="Paramètres"
+        app:showAsAction="never"/>
+
+</menu>
