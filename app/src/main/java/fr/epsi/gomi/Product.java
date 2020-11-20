@@ -4,39 +4,37 @@ import retrofit2.Call;
 
 public class Product {
 
-    private  String id_product;
-    private boolean status;
-    private String marque;
-    private  String url_image;
-    private String cat_product;
-    private String[] composants;
+    private String id_product;
+    private String product_name_fr;
+    private String manufacturing_places;
+    private String origins;
+    private String brands;
+    private String image_front_url;
+    private String[] packaging_tags;
 
     public String getId_product() {
         return id_product;
     }
-
     public void setId_product(String id_product) {
         this.id_product = id_product;
     }
 
-    public boolean isStatus() {
-        return status;
+    public String getProductNameFr() { return product_name_fr; }
+
+    public String getManufacturingPlaces() { return manufacturing_places; }
+
+    public String getOrigins() { return origins; }
+
+    public String getBrands() {
+        return brands;
     }
 
-    public String getMarque() {
-        return marque;
+    public String getImageFrontUrl() {
+        return image_front_url;
     }
 
-    public String getUrl_image() {
-        return url_image;
-    }
-
-    public String getCat_product() {
-        return cat_product;
-    }
-
-    public String[] getComposants() {
-        return composants;
+    public String[] getPackagingTags() {
+        return packaging_tags;
     }
 
 }

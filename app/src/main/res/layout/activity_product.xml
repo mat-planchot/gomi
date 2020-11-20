@@ -41,6 +41,7 @@
 
     <ListView
         android:id="@+id/list"
+        android:layout_below="@id/contentHeader"
         android:layout_height="wrap_content"
         android:layout_width="match_parent">
     </ListView>

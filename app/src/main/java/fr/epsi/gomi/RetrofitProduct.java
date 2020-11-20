@@ -6,6 +6,6 @@ import retrofit2.http.Path;
 
 public interface RetrofitProduct {
 
-    @GET("/api/v0/product/{barcode}")
-    Call<Product> getData(@Path("barcode") String id_product);
+    @GET("api/v0/product/{barcode}")
+    Call<OpenFood> getData(@Path("barcode") String id_product);
 }
