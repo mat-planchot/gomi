@@ -7,7 +7,9 @@
 
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -15,13 +17,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ListProductActivity"></activity>
-        <activity android:name=".ParameterActivity" />
-        <activity android:name=".WasteSortingActivity" />
-        <activity android:name=".FormationActivity" />
-        <activity android:name=".LocalisationActivity" />
-        <activity android:name=".SettingsActivity" />
-        <activity android:name=".ScanListActivity" />
+        <activity
+            android:name=".ProductActivity"
+            android:label="@string/title_page_list" />
+        <activity
+            android:name=".AccountActivity"
+            android:label="Compte"/>
+        <activity
+            android:name=".WasteSortingActivity"
+            android:label="Le tri collectif" />
+        <activity
+            android:name=".FormationActivity"
+            android:label="formation" />
+        <activity
+            android:name=".LocalisationActivity"
+            android:label="@string/title_page_localisation" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="Paramètres"/>
+        <activity
+            android:name=".ScanListActivity"
+            android:label="Accueil" />
         <activity
             android:name=".HomePageActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar">
@@ -31,13 +47,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".ChoiceConnexionActivity"
+            android:label="Connexion"/>
         <activity
             android:name=".GoogleSignInActivity"
             android:label="@string/label_google_sign_in" />
         <activity
             android:name=".ConnexionActivity"
-            android:label="@string/label_emailpassword"
+            android:label="@string/label_connexion"
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
         <activity
             android:name=".CaptureAct"

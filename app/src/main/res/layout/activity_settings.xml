@@ -7,29 +7,6 @@
     tools:context=".SettingsActivity">
 
 
-    <LinearLayout
-        android:id="@+id/contentMenu"
-        android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-        <ImageView
-            android:id="@+id/menu_icon"
-            android:contentDescription="@string/menu"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/close"
-            android:layout_gravity="start"
-            android:padding="10dp" />
-        <TextView
-            android:id="@+id/titleSettings"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:textAlignment="center"
-            android:paddingVertical="8dp"
-            android:text="@string/title_page_settings"
-            android:textSize="18sp"
-            android:fontFamily="@font/poppins" />
-    </LinearLayout>
 
     <ImageView
         android:id="@+id/photoSettings"
@@ -37,7 +14,6 @@
         android:layout_width="300dp"
         android:layout_height="200dp"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/contentMenu"
         android:layout_marginTop="25dp"
         android:src="@drawable/photo_setting"
         android:layout_gravity="end" />
@@ -56,7 +32,8 @@
         android:drawablePadding="210dp"
         android:paddingLeft="25dp"
         android:paddingVertical="15dp"
-        tools:textSize="16sp" />
+        tools:textSize="16sp"
+        android:onClick="accountClick"/>
 
     <Button
         android:id="@+id/btnNotification"
@@ -89,6 +66,7 @@
         android:background="@drawable/btn_disconnect"
         android:paddingHorizontal="125dp"
         android:paddingVertical="15dp"
-        tools:textSize="14sp" />
+        tools:textSize="14sp"
+        android:onClick="logoutClick"/>
 
 </RelativeLayout>

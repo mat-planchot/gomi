@@ -15,7 +15,7 @@ public class HomePageActivity extends AppCompatActivity {
     }
 
     public void continueClick(View view) {
-        Intent intent = new Intent(HomePageActivity.this, MainActivity.class);
+        Intent intent = new Intent(HomePageActivity.this, ChoiceConnexionActivity.class);
         startActivity(intent);
     }
 }

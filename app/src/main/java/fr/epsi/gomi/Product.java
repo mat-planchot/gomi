@@ -1,14 +1,8 @@
 package fr.epsi.gomi;
 
-import java.lang.reflect.Array;
-
 import retrofit2.Call;
-import retrofit2.http.GET;
 
-public class Products implements RetrofitProduct{
-
-
-
+public class Product {
 
     private  String id_product;
     private boolean status;
@@ -45,8 +39,4 @@ public class Products implements RetrofitProduct{
         return composants;
     }
 
-    @Override
-    public Call<Products> getData() {
-        return null;
-    }
 }

@@ -12,7 +12,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
+public class ChoiceConnexionActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
     private static final Class[] CLASSES = new Class[]{
             ConnexionActivity.class,
             GoogleSignInActivity.class
@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_choice_connexion);
         ListView listView = findViewById(R.id.list_view);
 
         MyArrayAdapter adapter = new MyArrayAdapter(this, android.R.layout.simple_list_item_1, CLASSES);

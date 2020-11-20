@@ -10,18 +10,11 @@ import android.widget.Button;
 import android.widget.SearchView;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.gson.Gson;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
-
-import retrofit2.Call;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
-import retrofit2.http.GET;
 
 public class ScanListActivity extends AppCompatActivity {
     Button barcodeBtn;
@@ -66,14 +59,11 @@ public class ScanListActivity extends AppCompatActivity {
                     }
                 });
 
-                Products products = new Products();
-                products.setId_product(result.getContents());
-
-
-
+                //Toast.makeText(this, product.getId_product(), Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(this, ProductActivity.class);
+                intent.putExtra("barcode", result.getContents());
+                startActivity(intent);
             } else {
-                //Intent intent = new Intent(this, ListProductActivity.class);
-                //startActivity(intent);
                 Toast.makeText(this, "aucun résultat", Toast.LENGTH_LONG).show();
             }
         } else {

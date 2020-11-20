@@ -30,7 +30,7 @@ import java.io.InputStream;
 import java.net.URL;
 
 public class ConnexionActivity extends BaseActivity implements View.OnClickListener {
-    private static final String TAG = "EmailPasswordActivity";
+    private static final String TAG = "Connexion";
     private EditText mEdtEmail, mEdtPassword;
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
@@ -65,7 +65,7 @@ public class ConnexionActivity extends BaseActivity implements View.OnClickListe
                 } else {
                     Log.d(TAG, "onAuthStateChanged:signed_out");
                 }
-                updateUI(user);
+                startActivity(new Intent(ConnexionActivity.this, ScanListActivity.class));
             }
         };
     }
@@ -163,7 +163,6 @@ public class ConnexionActivity extends BaseActivity implements View.OnClickListe
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 mAuth.signOut();
-                updateUI(null);
             }
         });
         alert.setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
@@ -187,46 +186,6 @@ public class ConnexionActivity extends BaseActivity implements View.OnClickListe
             mLayoutPassword.setError(null);
             return true;
         }
-    }
-
-    private void updateUI(FirebaseUser user) {
-        if (user != null) {
-            if (user.getPhotoUrl() != null) {
-                new DownloadImageTask().execute(user.getPhotoUrl().toString());
-            }
-            mTextViewProfile.setText("DisplayName: " + user.getDisplayName());
-            mTextViewProfile.append("\n\n");
-            mTextViewProfile.append("Email: " + user.getEmail());
-            mTextViewProfile.append("\n\n");
-            mTextViewProfile.append("Firebase ID: " + user.getUid());
-            mTextViewProfile.append("\n\n");
-            mTextViewProfile.append("Email Verification: " + user.isEmailVerified());
-
-            if (user.isEmailVerified()) {
-                findViewById(R.id.verify_button).setVisibility(View.GONE);
-            } else {
-                findViewById(R.id.verify_button).setVisibility(View.VISIBLE);
-            }
-
-            findViewById(R.id.email_password_buttons).setVisibility(View.GONE);
-            findViewById(R.id.email_password_fields).setVisibility(View.GONE);
-            findViewById(R.id.signout_zone).setVisibility(View.VISIBLE);
-            findViewById(R.id.add_door_button).setVisibility(View.VISIBLE);
-            Button btn = (Button)findViewById(R.id.add_door_button);
-            btn.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    startActivity(new Intent(ConnexionActivity.this, ScanListActivity.class));
-                }
-            });
-        } else {
-            mTextViewProfile.setText(null);
-
-            findViewById(R.id.email_password_buttons).setVisibility(View.VISIBLE);
-            findViewById(R.id.email_password_fields).setVisibility(View.VISIBLE);
-            findViewById(R.id.signout_zone).setVisibility(View.GONE);
-        }
-        hideProgressDialog();
     }
 
     private class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {

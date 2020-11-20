@@ -4,42 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ListProductActivity">
-
-    <LinearLayout
-        android:id="@+id/contentMenu"
-        android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-        <ImageView
-            android:id="@+id/menu_icon"
-            android:contentDescription="@string/menu"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/close"
-            android:layout_gravity="start"
-            android:padding="10dp" />
-        <TextView
-            android:id="@+id/titleSettings"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:textAlignment="center"
-            android:paddingVertical="8dp"
-            android:text="@string/title_page_list"
-            android:textSize="18sp"
-            android:fontFamily="@font/poppins" />
-    </LinearLayout>
+    tools:context=".ProductActivity">
 
     <LinearLayout
         android:id="@+id/contentHeader"
         android:orientation="horizontal"
-        android:layout_below="@id/contentMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/imgProduct"
-            android:layout_below="@id/contentMenu"
             android:layout_width="66dp"
             android:layout_height="72dp"/>
 
@@ -65,12 +39,17 @@
         </LinearLayout>
     </LinearLayout>
 
+    <ListView
+        android:id="@+id/list"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+    </ListView>
     <Button
         android:id="@+id/btnBack"
         android:contentDescription="@string/back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/contentHeader"
+        android:layout_below="@id/list"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
         android:fontFamily="@font/poppins"
@@ -79,6 +58,7 @@
         android:background="@drawable/rounded_corners"
         android:paddingHorizontal="125dp"
         android:paddingVertical="15dp"
-        tools:textSize="14sp"/>
+        tools:textSize="14sp"
+        android:onClick="backClick"/>
 
 </RelativeLayout>
