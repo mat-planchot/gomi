@@ -14,8 +14,14 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.gson.Gson;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
+
+import retrofit2.Call;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+import retrofit2.http.GET;
 
 public class ScanListActivity extends AppCompatActivity {
     Button barcodeBtn;
@@ -47,22 +53,28 @@ public class ScanListActivity extends AppCompatActivity {
             if (result.getContents() != null) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
                 builder.setMessage(result.getContents());
-                builder.setTitle("scanning result");
-                builder.setPositiveButton("scan again", new DialogInterface.OnClickListener() {
+                builder.setTitle("résultat");
+                builder.setPositiveButton("scanner une seconde foi", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         scanCode();
                     }
-                }).setNegativeButton("finish", new DialogInterface.OnClickListener() {
+                }).setNegativeButton("fini", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         finish();
                     }
                 });
-                AlertDialog dialog = builder.create();
-                dialog.show();
+
+                Products products = new Products();
+                products.setId_product(result.getContents());
+
+
+
             } else {
-                Toast.makeText(this, "aucun réssultat", Toast.LENGTH_LONG).show();
+                //Intent intent = new Intent(this, ListProductActivity.class);
+                //startActivity(intent);
+                Toast.makeText(this, "aucun résultat", Toast.LENGTH_LONG).show();
             }
         } else {
             super.onActivityResult(requestCode, resultCode, data);
