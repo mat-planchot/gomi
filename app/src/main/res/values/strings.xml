@@ -56,7 +56,7 @@
 
     <string name="title_page_formation">Formation</string>
     <string name="photo_formation">meeting</string>
-    <string name="text_formation">Lorem ipsum</string>
+    <string name="text_formation">Sais-tu déjà ce que contient une poubelle ? <br></br> Comment faire pour trier tes déchets ? <br></br> Clique sur “ Commencer ! “ pour en savoir plus</string>
     <string name="begin">Commencer !</string>
 
     <string name="title_page_localisation">Formation</string>
@@ -64,6 +64,9 @@
     <string name="legend_glass">Poubelle pour verres</string>
     <string name="legend_household">Poubelle à ordures ménagères</string>
     <string name="legend_recycle">Poubelle à emballage recyclables</string>
+
+    <string name="title_page_list">Fiche produit</string>
+    <string name="back">Retour</string>
 
     <string name="title_page_settings">Paramètres</string>
     <string name="photo_settings">paramètre</string>
@@ -75,5 +78,6 @@
     <string name="add">ajouter</string>
     <string name="continued">Continuez</string>
 
+    <string name="url_json">https://world.openfoodfacts.org/api/v0/product/3274080001005.json</string>
 
 </resources>

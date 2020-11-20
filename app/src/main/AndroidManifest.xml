@@ -7,7 +7,7 @@
 
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
-
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -15,7 +15,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ParameterActivity"></activity>
+        <activity android:name=".ListProductActivity"></activity>
+        <activity android:name=".ParameterActivity" />
         <activity android:name=".WasteSortingActivity" />
         <activity android:name=".FormationActivity" />
         <activity android:name=".LocalisationActivity" />

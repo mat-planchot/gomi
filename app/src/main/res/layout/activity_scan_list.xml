@@ -31,5 +31,4 @@
             style="@style/CustomGreenCenterButton"
             android:onClick="scanClick"/>
 
-
 </RelativeLayout>
